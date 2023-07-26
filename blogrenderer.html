@@ -1,0 +1,52 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/mobile.css">
+    <link rel="stylesheet" href="assets/blog.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas> <!-- Arkaplan -->
+    <div class="navbar">
+        <div class="navbarLogo"></div>
+        <div class="navbarItems">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="#contact">İletİşİm</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </div>
+    <div class="hero" id="heroimg" style="background-image: url(assets/wireframe_130220191.png);">
+    </div>
+    <div class="main">
+        <div class="doccon" id="allcon" style="width: 90%;">
+            
+        </div>
+        <div class="footer" id="contact">
+            <br><br><br>
+            <div class="header" style="color:  white; text-align: center;">İletişim Detayları</div>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+        </div>
+        <script src="blog/blogTexts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get("blog") == null || urlParams.get("blog") > blogArray.length) {
+                window.location.href = "404.html";
+            }
+            const curBlog = urlParams.get("blog") - 1;
+            document.getElementById("allcon").innerHTML = marked.parse(blogArray[curBlog]);
+            document.getElementById("heroimg").style.backgroundImage = 'url(blog/' + (curBlog + 1) + '.png)'; 
+            document.getElementById("heroimg").style.aspectRatio = "540/283";
+        </script>
+        <script src="assets/bg.js"></script>
+        <script src="assets/vanilla-tilt.js"></script>
+</body>
+
+</html>

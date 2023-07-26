@@ -1,0 +1,56 @@
+
+@media (max-width: 988px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .joinus {
+        font-size: 20px;
+    }
+
+    .hero {
+        aspect-ratio: 1;
+        padding-bottom: 40px;
+    }
+    .doccon {
+        width: 400px;
+        height: fit-content;
+    }
+
+    .divimg {
+        float: none;
+        width: 100%;
+    }
+    
+    .content {
+        float: none;
+        clear: none;
+        width: 100%;
+        margin: 10px;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .doccon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        aspect-ratio: 1;
+    }
+    .card {
+        width: 350px;
+    }
+    .cards {
+        grid-template-columns: repeat(auto-fit, 350px);
+    }
+}
+
