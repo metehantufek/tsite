@@ -103,8 +103,7 @@ body {
     width: 400px;
     aspect-ratio: 3/1.5;
     border-radius: 20px;
-    border: 4px solid rgb(50, 50, 160);
-    outline: 4px solid white;
+    border: 4px solid white;
     transform: translate(0, -10px);
     font-family: "Comfortaa", cursive;
     transition: transform 0.5s, box-shadow 0.5s;
@@ -315,4 +314,16 @@ hr {
     width: 100lvw;
     height: fit-content;
     background-color: rgb(50, 50, 160);
+}
+
+.phonecall {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url(phone-call.png);
+    background-size: cover;
+    cursor: pointer;
 }
