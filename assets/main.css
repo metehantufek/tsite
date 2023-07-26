@@ -79,7 +79,7 @@ body {
 }
 
 .navbarItems a:hover {
-    color: rgb(50, 50, 255);
+    color: rgb(50, 50, 160);
 }
 
 .cards {
@@ -98,12 +98,12 @@ body {
 }
 
 .card {
-    color: rgb(50, 50, 255);
+    color: rgb(50, 50, 160);
     background-color: white;
     width: 400px;
     aspect-ratio: 3/1.5;
     border-radius: 20px;
-    border: 4px solid rgb(50, 50, 255);
+    border: 4px solid rgb(50, 50, 160);
     outline: 4px solid white;
     transform: translate(0, -10px);
     font-family: "Comfortaa", cursive;
@@ -124,7 +124,7 @@ body {
 
 .card:hover {
     transform: translate(0, -25px);
-    box-shadow: 0px 0px 6px rgb(50, 50, 255);
+    box-shadow: 0px 0px 6px rgb(50, 50, 160);
 }
 
 .card p {
@@ -305,35 +305,10 @@ details {
 .discontent:hover {
     background-size: 110%;
 }
-/*
-.disbox {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    flex: 0.8;
-    aspect-ratio: 1;
-    border-radius: 15px;
-    background-color: rgba(50, 50, 160, 1);
-    border: 4px solid white;
-    outline: 4px solid rgba(50, 50, 160, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 16px;
-    font-family: "Calistoga";
-    letter-spacing: 1px;
-}
-
-.discontent:hover .disbox {
-    visibility: visible;
-    opacity: 1;
-}
-*/
 hr {
     border-radius: 15px;
     border-style: solid;
-    border-color: rgba(50, 50, 255, 0.3);
+    border-color: rgba(50, 50, 160, 0.3);
 }
 
 .footer {
